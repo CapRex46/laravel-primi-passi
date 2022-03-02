@@ -25,4 +25,14 @@ Route::get('/', function () {
 
     
 });
+
+Route::get("/login", function () {
+    $data = [
+      'nome' => 'Mario',
+      'cognome' => 'Rossi',
+    ];
+  
+    return view("login", $data);
+  });
+  
  
